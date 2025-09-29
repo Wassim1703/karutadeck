@@ -16,7 +16,7 @@ if not os.path.isabs(path): path = os.path.join(os.curdir, path)
 outpath = args.output_path
 if not os.path.isabs(outpath): outpath = os.path.join(os.curdir, outpath)
 
-with open(os.path.join(path, 'deck.json'), "r") as file:
+with open(os.path.join(path, 'deck.json'), "r", encoding="utf-8") as file:
     meta = json.load(file)
 
 images = [
@@ -36,7 +36,7 @@ images_cut = [
 
 for d in 'Sounds','Visuals':
     os.makedirs(os.path.join(outpath, d), exist_ok=True)
-with open(os.path.join(outpath, meta["name"]+'.txt'), 'w') as file:
+with open(os.path.join(outpath, meta["name"]+'.txt'), "w", encoding="utf-8") as file:
     for (m, n, im) in images_cut:
         print(n)
         file.write(n+"\n")
