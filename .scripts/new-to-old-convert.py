@@ -22,7 +22,7 @@ with open(os.path.join(path, 'deck.json'), "r", encoding="utf-8") as file:
 images = [
     (
         m,
-        np.array(Image.open(os.path.join(path, 'Visuals', m["image"])))
+        np.array(Image.open(os.path.join(path, 'Visuals', m["image"])).convert("RGBA"))
     ) for m in meta["cards"]
 ]
 
