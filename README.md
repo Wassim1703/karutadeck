@@ -57,11 +57,11 @@ Mon deck Karuta ! u.u
 
 <img src="Visuals/crs_danganronpa-3-future_op1_dead-or-lie.png" alt="Danganronpa 3 future OP1 DEAD OR LIE" width="250"/>  
 
-### [09 - Kibō no Uta](https://www.youtube.com/watch?v=vV3l_1j8pPE)
+### [09 - Kibo no Uta](https://www.youtube.com/watch?v=vV3l_1j8pPE)
 &emsp;**Anime :** [Food Wars](https://anilist.co/anime/20923) - OP1  
 &emsp;**Artiste(s) :** ULTRATOWER  
 
-<img src="Visuals/crs_food-wars_op1_kibō-no-uta.png" alt="Food Wars OP1 Kibō no Uta" width="250"/>  
+<img src="Visuals/crs_food-wars_op1_kibo-no-uta.png" alt="Food Wars OP1 Kibo no Uta" width="250"/>  
 
 ### [10 - Sakuramitsutsuki](https://www.youtube.com/watch?v=GQRMESLHVc0)
 &emsp;**Anime :** [Gintama](https://anilist.co/anime/918) - OP13  
