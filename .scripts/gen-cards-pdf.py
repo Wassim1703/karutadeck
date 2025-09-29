@@ -31,7 +31,7 @@ outpath = args.output_path
 if not os.path.isabs(outpath):
     outpath = os.path.join(os.curdir, outpath)
 
-with open(os.path.join(path, 'deck.json'), "r") as file:
+with open(os.path.join(path, 'deck.json'), "r", encoding="utf-8") as file:
     meta = json.load(file)
 
 # Filter cards based on --include

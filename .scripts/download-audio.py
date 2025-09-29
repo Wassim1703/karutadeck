@@ -15,6 +15,10 @@ def download_youtube(url):
         'format': 'bestaudio/best',
         'outtmpl': f'{temp_path}.%(ext)s',
         'quiet': True,
+	'noplaylist': True,
+    	'nocheckcertificate': True,
+    	'geo_bypass': True,
+	'player_client': 'web_creator',    
     }
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
@@ -65,7 +69,7 @@ args = parser.parse_args()
 path = args.deck_path
 if not os.path.isabs(path): path = os.path.join(os.path.curdir, path)
 
-with open(os.path.join(path, 'deck.json'), "r") as file:
+with open(os.path.join(path, 'deck.json'), "r", encoding='utf-8') as file:
     meta = json.load(file)
 
 print(f"Loaded {meta['name']}\n")

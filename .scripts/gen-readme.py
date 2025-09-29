@@ -10,10 +10,10 @@ args = parser.parse_args()
 path = args.deck_path
 if not os.path.isabs(path): path = os.path.join(os.path.curdir, path)
 
-with open(os.path.join(path, 'deck.json'), "r") as file:
+with open(os.path.join(path, 'deck.json'), "r", encoding="utf-8") as file:
     meta = json.load(file)
 
-with open(os.path.join(path, 'README.md'), "w") as file:
+with open(os.path.join(path, 'README.md'), "w", encoding="utf-8") as file:
     file.write(f"# {meta['name']}\n")
     file.write(f"**Auteur :** {meta['author']}  \n")
     file.write(f"**Categorie :** {meta['category']}  \n")
